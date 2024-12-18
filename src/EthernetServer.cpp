@@ -13,7 +13,7 @@ EthernetServer::EthernetServer(uint16_t port)
   _port = port;
 }
 
-void EthernetServer::begin()
+void EthernetServer::begin(uint16_t port)
 {
   for (int sock = 0; sock < MAX_SOCK_NUM; sock++) {
     EthernetClient client(sock);
